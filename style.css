@@ -19,6 +19,9 @@
 body {
     margin: 10px;
     font-family: 'Epilogue', sans-serif;
+    font-size: 0.9rem;
+    background-color:var(--almost-white);
+    color:var(--medium-grey);
 }
 
 .nav-area {
@@ -45,7 +48,8 @@ body {
 }
 .nav-bar li{
     display: inline;
-    margin-right: 10px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 
@@ -74,14 +78,56 @@ body {
 }
 
 
-/*Context Menus*/
+/*Context Menus Features*/
 .context-menu-features{
+    position: absolute;
     background-color: white;
+    padding: 15px;
+    font-size: 0.8rem;
+    width: 130px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow:2px 2px 35px rgb(193, 193, 193);
+    display: none;
+    
 }
 
 .context-menu-features li {
+    list-style: none;
     margin-bottom: 10px;
+    
 }
+
+.context-menu-features img {
+    position: relative;
+    margin-right: 5px;
+    width: 14px;
+    top:2px
+}
+
+/*--------Context Menu Company--------------*/
+.context-menu-company{
+    background-color: white;
+    padding: 15px;
+    font-size: 0.8rem;
+    width: 130px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow:2px 2px 35px rgb(193, 193, 193);
+    display: none;
+}
+
+.context-menu-company li {
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+
 
 @media screen and (max-width:575px) {
     .nav-area {
