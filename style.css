@@ -54,6 +54,7 @@ body {
 
 
 
+
 .burger {
     display: none;
     
@@ -95,7 +96,7 @@ body {
 .context-menu-features li {
     list-style: none;
     margin-bottom: 10px;
-    
+    cursor: pointer;
 }
 
 .context-menu-features img {
@@ -107,6 +108,7 @@ body {
 
 /*--------Context Menu Company--------------*/
 .context-menu-company{
+    position: absolute;
     background-color: white;
     padding: 15px;
     font-size: 0.8rem;
@@ -120,6 +122,7 @@ body {
 .context-menu-company li {
     list-style: none;
     margin-bottom: 10px;
+    cursor: pointer;
     
 }
 
@@ -135,7 +138,7 @@ body {
     }
 
     .nav-bar {
-        display: none;
+        
         font-size: 3rem;
         position: absolute;
         right:-15px;
