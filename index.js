@@ -1,12 +1,15 @@
 const body=document.querySelector("body");
 
-const nav_bar=document.querySelector(".nav-bar");
+const navbar=document.querySelector(".navbar");
 const close_button=document.querySelector(".close-button");
 const lnk_features=document.querySelector("#lnk-features");
 const lnk_company=document.querySelector("#lnk-company");
 const context_menu_features=document.querySelector(".context-menu-features");
 const context_menu_company=document.querySelector(".context-menu-company");
 const burger=document.querySelector(".burger");
+
+const logo=document.querySelector(".logo");
+
 
 console.log (window.innerWidth);
 
@@ -16,6 +19,7 @@ let context_menu_company_flag=false;
 
 
 // Features button is clicked
+/*
 lnk_features.addEventListener('click',event=>{
     context_menu_features_flag=!context_menu_features_flag;
 
@@ -36,7 +40,7 @@ lnk_features.addEventListener('click',event=>{
         /*
         context_menu_features.style.position="static";
         
-        */
+        
     } else {
         //Get Cordinates of Features link
         let cords=lnk_features.getBoundingClientRect();
@@ -57,7 +61,10 @@ lnk_features.addEventListener('click',event=>{
     
     
 
-});
+});*/
+
+/*
+
 
 // Company menu is clicked
 
@@ -101,17 +108,26 @@ lnk_company.addEventListener('click',event=>{
     
 
 });
+*/
+
+
 
 // Burger is clicked
 burger.addEventListener('click',event=>{
-    nav_bar.style.display="flex";
-    close_button.style.display="block";
+    navbar.classList.add("showme");
+    //navbar.style.display="flex"
+    //navbar.style.display="flex";
+    //close_button.style.display="block";
 
 });
 
 // Close button is clicked
 close_button.addEventListener('click',event=>{
-    nav_bar.style.display="none";
-    close_button.style.display="none";
+    navbar.classList.remove("showme");
+    //navbar.style.display="none";
+    //close_button.style.display="none";
 })
 
+logo.addEventListener('click',event=>{
+    navbar.style.display="flex"
+})
